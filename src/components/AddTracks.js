@@ -4,7 +4,7 @@ import {
   AddContainer,
   ContainerItems,
   MainContainer,
-  Text,
+ 
 } from "./styles/StyledAddTracks";
 
 const urlApi =
@@ -47,9 +47,9 @@ export default class AddTracks extends React.Component {
         headers
       );
 
-      alert("Musica adicionada.");
       this.setState({ name: "", artist: "", urlTrack: "" });
       this.props.getPlaylistTracks(this.props.playlistId);
+      return res;
     } catch (err) {
       alert(err.response.message);
     }

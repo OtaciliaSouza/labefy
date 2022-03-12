@@ -48,6 +48,7 @@ export default class Home extends React.Component {
         alert("Playlist deletada");
         this.getAllPlaylists();
         this.pagePlaylists();
+        return res;
       } catch (err) {
         console.log(err.message);
       }

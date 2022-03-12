@@ -7,5 +7,7 @@ export default function App() {
       <GlobalStyle />
       <Home />
     </div>
-  );
+  ); 
+  // teste
 }
+

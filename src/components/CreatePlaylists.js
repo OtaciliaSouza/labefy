@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { MainContainer, Text } from "./styles/StyledCreatePlaylist";
+import { MainContainer} from "./styles/StyledCreatePlaylist";
 
 const urlApi =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -28,6 +28,7 @@ export default class CreatePlaylists extends React.Component {
       alert("Playlist criada");
       this.setState({ playlist: "" });
       this.props.getAllPlaylists();
+      return res;
     } catch (err) {
       alert(err.message);
     }

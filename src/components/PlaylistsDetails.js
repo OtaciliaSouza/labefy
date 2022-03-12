@@ -59,6 +59,7 @@ export default class PlaylistsDetails extends React.Component {
         );
         alert("Música deletada");
         this.props.getPlaylistTracks(this.props.playlistId);
+        return res;
       } catch (err) {
         alert(err.res.data.message);
       }
